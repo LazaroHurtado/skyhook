@@ -60,9 +60,7 @@ game.close()
 ```
 
 The class decorator calls
-`skyrl_gym.register("textarena_wordle", entry_point=WordleEnv)`. SkyRL's parameter
-is **`entry_point`**, not `entrypoint`; passing the class avoids an invalid bare
-class-name string. Both decorators return their inputs unchanged.
+`skyrl_gym.register("textarena_wordle", entry_point=WordleEnv)`. Both decorators return their inputs unchanged.
 
 `sum_rewards(*args, **kwargs)` calls each registered reward once,
 in registration order, forwarding the same arguments to every function, then
