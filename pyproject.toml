@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skyhook-rl"
+version = "0.1.0"
+description = "Decorator-based SkyRL environment registration and composable rewards."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["skyrl-gym>=0.4.0"]
+
+[tool.setuptools]
+packages = ["skyhook"]
+
+[tool.setuptools.package-data]
+skyhook = ["py.typed"]
